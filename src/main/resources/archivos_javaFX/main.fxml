@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="397.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoADA.controladores.Fx.MainController">
+   <Label alignment="CENTER" layoutX="18.0" layoutY="57.0" prefHeight="34.0" prefWidth="562.0" style="-fx-background-color: Grey; -fx-font-size: 20; -fx-font-family: Arial;" text="Gestión de un Videoclub" />
+   <Label alignment="CENTER" layoutX="131.0" layoutY="102.0" prefHeight="18.0" prefWidth="328.0" style="-fx-background-color: Grey; -fx-font-size: 15; -fx-font-family: Arial;" text="BD para películas y usuarios" />
+   <AnchorPane layoutX="117.0" layoutY="161.0" prefHeight="72.0" prefWidth="459.0" style="-fx-background-color: Grey;">
+      <Button id="btn_gest_film" fx:id="btnGestFilms" layoutX="156.0" layoutY="26.0" mnemonicParsing="false" onAction="#gestionar_peliculas" style="-fx-font-family: Arial;" text="Gestionar" />
+      <Button fx:id="inf_peliculas" layoutX="259.0" layoutY="26.0" mnemonicParsing="false" onAction="#inf_peliculas" style="-fx-font-family: Arial;" text="Información" />
+   </AnchorPane>
+   <AnchorPane layoutX="117.0" layoutY="267.0" prefHeight="72.0" prefWidth="459.0" style="-fx-background-color: Grey;">
+      <Button fx:id="btnGestUsers" layoutX="158.0" layoutY="26.0" mnemonicParsing="false" onAction="#gestionar_usuarios" style="-fx-font-family: Arial;" text="Gestionar" />
+      <Button fx:id="inf_usuarios" layoutX="262.0" layoutY="26.0" mnemonicParsing="false" onAction="#inf_usuarios" style="-fx-font-family: Arial;" text="Información" />
+   </AnchorPane>
+   <Label alignment="CENTER" layoutX="23.0" layoutY="184.0" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: Grey; -fx-font-family: Arial;" text="Películas" />
+   <Label alignment="CENTER" layoutX="23.0" layoutY="290.0" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: Grey; -fx-font-family: Arial;" text="Usuarios" />
+</AnchorPane>

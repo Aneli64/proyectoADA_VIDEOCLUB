@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="501.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.proyectoADA.controladores.Fx.PeliculasController">
+   <Label alignment="CENTER" layoutX="355.0" layoutY="43.0" prefHeight="32.0" prefWidth="130.0"
+          style="-fx-font-size: 20; -fx-font-family: Arial; -fx-border-color: Green;" text="Peliculas"/>
+   <TextField fx:id="idModf" layoutX="622.0" layoutY="186.0" prefHeight="25.0" prefWidth="199.0"/>
+   <Label alignment="CENTER" layoutX="558.0" layoutY="186.0" prefHeight="25.0" prefWidth="45.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="ID"/>
+   <Button fx:id="Delete_Film" layoutX="72.0" layoutY="122.0" mnemonicParsing="false" onAction="#deleteFilm"
+           prefHeight="33.0" prefWidth="216.0" text="Eliminar pelicula existente"/>
+   <Button fx:id="Add_Film" layoutX="244.0" layoutY="379.0" mnemonicParsing="false" onAction="#addFilm"
+           prefHeight="34.0" prefWidth="91.0" text="Añadir"/>
+   <Button fx:id="btn_Volver" layoutX="27.0" layoutY="441.0" mnemonicParsing="false" onAction="#volverAtras"
+           prefHeight="34.0" prefWidth="73.0" text="Volver"/>
+   <TextField fx:id="textoPeliculaAeliminar" layoutX="127.0" layoutY="169.0" prefHeight="25.0" prefWidth="160.0"/>
+   <Label alignment="CENTER" layoutX="72.0" layoutY="169.0" prefHeight="25.0" prefWidth="45.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="ID"/>
+   <Button fx:id="Modify_film" layoutX="573.0" layoutY="370.0" mnemonicParsing="false" onAction="#modifyFilm"
+           prefHeight="33.0" prefWidth="216.0" text="Añadir cambios a la pelicula"/>
+   <Label alignment="CENTER" layoutX="557.0" layoutY="122.0" prefHeight="33.0" prefWidth="265.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Modificar pelicula existente"/>
+   <Label alignment="CENTER" layoutX="68.0" layoutY="308.0" prefHeight="25.0" prefWidth="91.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Director"/>
+   <Label alignment="CENTER" layoutX="68.0" layoutY="269.0" prefHeight="25.0" prefWidth="91.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Nombre"/>
+   <Label alignment="CENTER" layoutX="64.0" layoutY="344.0" prefHeight="25.0" prefWidth="99.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Fecha_lanz"/>
+   <TextField fx:id="textoNombre" layoutX="176.0" layoutY="270.0" prefHeight="25.0" prefWidth="160.0"/>
+   <TextField fx:id="textoDirector" layoutX="176.0" layoutY="308.0" prefHeight="25.0" prefWidth="160.0"/>
+   <TextField fx:id="textoFechaLanz" layoutX="176.0" layoutY="344.0" prefHeight="25.0" prefWidth="160.0"/>
+   <Label alignment="CENTER" layoutX="512.0" layoutY="230.0" prefHeight="25.0" prefWidth="91.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Nombre"/>
+   <TextField fx:id="nombreModf" layoutX="622.0" layoutY="229.0" prefHeight="25.0" prefWidth="199.0"/>
+   <Label alignment="CENTER" layoutX="512.0" layoutY="272.0" prefHeight="25.0" prefWidth="91.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Director"/>
+   <TextField fx:id="directorModf" layoutX="622.0" layoutY="272.0" prefHeight="25.0" prefWidth="199.0"/>
+   <Label alignment="CENTER" layoutX="512.0" layoutY="317.0" prefHeight="25.0" prefWidth="91.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Fecha_lanz"/>
+   <TextField fx:id="fechaLanzModf" layoutX="622.0" layoutY="317.0" prefHeight="25.0" prefWidth="199.0"/>
+   <Label alignment="CENTER" layoutX="69.0" layoutY="228.0" prefHeight="33.0" prefWidth="265.0"
+          style="-fx-font-size: 15; -fx-background-color: Grey; -fx-border-color: Purple; -fx-font-family: Arial;"
+          text="Añadir nueva pelicula"/>
+</AnchorPane>
